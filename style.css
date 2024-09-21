@@ -61,7 +61,7 @@ html {
 #subject2 {
     transform: scale(30);
     position: absolute;
-    left: 800%;
+    left: 1000%;
     top: 500%;
     color: rgb(131, 255, 129);
     text-decoration: none;
@@ -152,17 +152,19 @@ p {
     position: absolute;
     height: 150px;
     width: 150px;
+    object-fit: cover;
     transform: translate(-50%, -120%);
     border-radius: 50%;
     opacity: 0;
+
 }
 
 .horizontal-line {
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 1px;
     background-color: rgb(255, 255, 255);
-    transform: translate(0, -80%);
+    transform: translate(30%, -80%);
     opacity: 0;
 
 }
