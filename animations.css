@@ -83,15 +83,12 @@
 @keyframes moveUp {
     from {
         transform: scale(1) translateY(0);
-        background: linear-gradient(90deg, #00d2ff 0%, #a148ff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
     }
 
     to {
         transform: scale(2) translateY(-300px);
-        /* -webkit-background-clip: none;
-        -webkit-text-fill-color: none; */
+
     }
 }
 

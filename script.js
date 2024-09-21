@@ -3,8 +3,10 @@ const cursor = document.querySelector('.cursor');
 const content = document.querySelector('.content');
 const links = document.querySelectorAll('a');
 const zoomhint = document.querySelector('#zoomhint');
-const name = document.querySelector('h1');
+const name = document.querySelector('.name');
 const lipsum = document.querySelector('#lipsum');
+const pf = document.querySelector('#pf');
+const hline = document.querySelector('.horizontal-line');
 
 links.forEach(link => {
     link.addEventListener('mouseover', () => {
@@ -130,10 +132,16 @@ function update() {
 
     if (scaleValue < .8) {
         zoomhint.style.animation = 'fadeOut 1s forwards';
+        pf.style.animation = 'fadeIn 1s forwards';
+        hline.style.animation = 'fadeIn 1s forwards';
+        doneFirstZoomHintAnimation = true;
     }
     else {
         zoomhint.style.animation = 'fadeIn 1s forwards';
-
+        if (doneFirstZoomHintAnimation) {
+            pf.style.animation = 'fadeOut 1s forwards';
+            hline.style.animation = 'fadeOut 1s forwards';
+        }
     }
 
 
