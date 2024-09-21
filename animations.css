@@ -1,0 +1,106 @@
+@keyframes rotateContainer {
+    from {
+
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(30deg) rotateY(-10deg) rotateZ(20deg);
+    }
+}
+
+@keyframes reverseRotateContainer {
+    from {
+        transform: rotateX(30deg) rotateY(-10deg) rotateZ(20deg);
+
+    }
+
+    to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+@keyframes setMask {
+    from {
+        background-color: #000000;
+    }
+
+    to {
+        background-color: #00000000;
+    }
+}
+
+@keyframes reverseSetMask {
+    from {
+        background-color: #00000000;
+    }
+
+    to {
+        background-color: #000000;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveDownLittle {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes moveUpLittle {
+    from {
+        transform: translateY(30px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: scale(1) translateY(0);
+        background: linear-gradient(90deg, #00d2ff 0%, #a148ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    to {
+        transform: scale(2) translateY(-300px);
+        /* -webkit-background-clip: none;
+        -webkit-text-fill-color: none; */
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: scale(2) translateY(-300px);
+    }
+
+    to {
+        transform: scale(1) translateY(0);
+    }
+}
