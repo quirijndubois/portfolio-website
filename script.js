@@ -144,6 +144,9 @@ function update() {
         }
     }
 
+    if (scaleValue < 0.05) {
+        updatePendulum();
+    }
 
 
 }
